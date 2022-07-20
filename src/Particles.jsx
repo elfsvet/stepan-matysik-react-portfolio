@@ -10,6 +10,8 @@ export default class Particles extends React.Component {
     const ctx = canvas.getContext("2d");
     canvas.width = document.documentElement.clientWidth;
     canvas.height = document.documentElement.clientHeight;
+    // canvas.width = window.innerWidth
+    // canvas.height = window.innerHeight
  
     let num = 150;
     let size = 3;

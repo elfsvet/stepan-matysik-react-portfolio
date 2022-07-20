@@ -4,6 +4,7 @@
   font-family: 'Nunito',sans-serif;
 }
 
+
 :root {
   --nav-color       : hsl(210, 11%, 15%);
   --nav-color-hover : hsl(210, 11%, 45%);
@@ -13,12 +14,9 @@
   --font-color-hover: hsl(0, 0%, 40%);
 }
 
-.tsparticles-canvas-el {
-  position: inherit !important;
-  min-height: 96vh;
-}
 
 
-#tsparticles {
-  height: 90vh;
+body {
+ 
 }
+
