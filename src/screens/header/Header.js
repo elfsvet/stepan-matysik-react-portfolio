@@ -1,6 +1,6 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect';
-import './Header.css'
+import './header.css'
 function Header() {
   return (
     <div className="main-info">
