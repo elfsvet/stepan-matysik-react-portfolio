@@ -1,7 +1,7 @@
 .main-info {
     display: flex;
     position: absolute;
-    /* color: var(--font-color); */
+    color: var(--font-color);
     top: 0;
     left: 0;
     right: 0;
