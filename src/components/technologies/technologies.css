@@ -12,7 +12,7 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1100px;
+    /* max-width: 1100px; */
     margin: 1rem 0;
 }
 

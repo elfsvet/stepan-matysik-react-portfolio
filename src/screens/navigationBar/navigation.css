@@ -1,6 +1,10 @@
 .navigation-container {
     background-color: var(--nav-color);
     color           : white;
+    zIndex          : '2';
+    position        : 'fixed';
+    top             : '0';
+    width           : '100%';
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -18,4 +22,3 @@
 .links a:hover {
     background-color: var(--font-color-hover);
 }
-
