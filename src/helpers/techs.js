@@ -20,6 +20,42 @@ export const techs = [
         iconName: 'nodejs'
     },
     {
+        name: 'MySQL',
+        iconName: 'mysql'
+    },
+    {
+        name: 'Gulp',
+        iconName: 'gulp'
+    },
+    {
+        name: 'Postgresql',
+        iconName: 'postgresql'
+    },
+    {
+        name: 'AWS',
+        iconName: 'aws'
+    },
+    {
+        name: 'Firebase',
+        iconName: 'firebase'
+    },
+    {
+        name: 'SASS',
+        iconName: 'sass'
+    },
+    {
+        name: 'Bootstrap',
+        iconName: 'bootstrap'
+    },
+    {
+        name: 'Visual Studio',
+        iconName: 'visualstudio'
+    },
+    {
+        name: 'MongoDB',
+        iconName: 'mongodb'
+    },
+    {
         name: 'npm',
         iconName: 'npm'
     },

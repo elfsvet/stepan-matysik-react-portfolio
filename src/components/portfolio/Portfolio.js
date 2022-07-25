@@ -10,31 +10,28 @@ import Button from 'react-bootstrap/Button';
 
 function Portfolio() {
     const [modalShow, setModalShow] = useState(false);
-    const [temmpData, setTempData] = useState({});
+    const [tempData, setTempData] = useState({});
 
 
     const handleClose = () => setModalShow(false);
 
-    const createModal = (e) => {
+    const createModal = (data) => {
         return (
             <Modal
-                show={modalShow}
-                onHide={handleClose}
-                backdrop="static"
-                keyboard={false}
-            >
-                <Modal.Header closeButton>
-                    <Modal.Title>{e.title}</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    {e.summary}
-                </Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                        Close
-                    </Button>
-                    <Button variant="primary">Understood</Button>
-                </Modal.Footer>
+            show={modalShow}
+            onHide={handleClose}
+            size='lg'
+            arial-lebelledby="continer-modal-title-vcenter"
+            centered
+          >
+            <Modal.Header>
+                <Modal.Title id="contained-modal-title-vcenter">
+                {data.title}
+                </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+            <p>{data.summary}</p>
+            </Modal.Body>
             </Modal>
         )
     }
@@ -59,7 +56,27 @@ function Portfolio() {
                 <div className="portfolio__click__info"></div>
 
 
+                {/* <Modal
+                show={modalShow}
+                onHide={handleClose}
+                backdrop="static"
+                keyboard={false}
+            >
+                <Modal.Header closeButton>
+                    <Modal.Title>{e.title}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    {e.summary}
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleClose}>
+                        Close
+                    </Button>
+                    <Button variant="primary">Understood</Button>
+                </Modal.Footer>
+            </Modal> */}
 
+            {createModal(tempData)}
 
             </Card >
 
