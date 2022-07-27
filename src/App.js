@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <Navigation />
       <Header />
-      <Particles />
+      <Particles id='tsparticles'/>
       <AboutMe />
       <Technologies />
       <Portfolio />

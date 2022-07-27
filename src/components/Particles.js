@@ -20,10 +20,10 @@ const ParticlesComponent = (props) => {
       },
       interactivity: {
         events: {
-          onClick: {
-            enable: true, // enables the click event
-            mode: "push", // adds the particles on click
-          },
+          // onClick: {
+          //   enable: true, // enables the click event
+          //   mode: "push", // adds the particles on click
+          // },
           onHover: {
             enable: true, // enables the hover event
             mode: "repulse", // make the particles run away from the cursor
@@ -43,7 +43,7 @@ const ParticlesComponent = (props) => {
           value: '#ffffff'
         },
         links: {
-          color: '#ffff5f',
+          color: '#abdbe3',
           enable: true, // enabling this will make particles linked together
           distance: 200, // maximum distance for linking the particles
         },
