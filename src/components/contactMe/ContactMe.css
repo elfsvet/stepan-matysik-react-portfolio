@@ -12,7 +12,7 @@
 .contactMe__data__links a {
     color: white;
     text-decoration: none;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .contactMe__data__links a:hover {

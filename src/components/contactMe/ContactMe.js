@@ -16,7 +16,7 @@ function ContactMe() {
                 <div>
                     <p>Fort Lauderdale, FL</p>
                     <p>Stepan Matysik</p>
-                    <a href='mailto:stepan.matysik@gmail.com'>stepan.matysik@gmail.com</a>
+                    <a href='mailto:stepanmatysik@gmail.com'>stepanmatysik@gmail.com</a>
                 </div>
                 <div>
                     {createLinks()}

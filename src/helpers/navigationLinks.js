@@ -4,8 +4,8 @@ export const navigationLinks = [
         ref: '#home'
     },
     {
-        name: 'ABOUT ME',
-        ref: '#about-me'
+        name: 'ABOUT',
+        ref: '#about'
     },
     {
         name: 'TECHNOLOGIES',

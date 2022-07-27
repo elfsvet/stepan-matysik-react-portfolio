@@ -12,7 +12,7 @@ const createLinks = () => {
 const NavigationBar = () => {
     return (
         <div id='home'>
-            <Navbar className='navigation-container' collapseOnSelect expand="md" style={{ zIndex: 2 }}>
+            <Navbar className='navigation-container' collapseOnSelect expand="md" style={{ zIndex: 2}}>
                 <Navbar.Brand href="#home" style={{ marginLeft: '1rem' }}>
                     Stepan Matysik
                 </Navbar.Brand>
