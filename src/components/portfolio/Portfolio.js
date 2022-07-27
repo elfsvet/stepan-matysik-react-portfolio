@@ -18,27 +18,27 @@ function Portfolio() {
     const createModal = (data) => {
         return (
             <Modal
-            show={modalShow}
-            onHide={handleClose}
-            size='lg'
-            arial-labelledby="contained-modal-title-vcenter"
-            centered
-          >
-            <Modal.Header>
-                <Modal.Title id="contained-modal-title-vcenter">
-                {data.title}
-                </Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-            <p>{data.summary}</p>
-            <Image src={data.image} style={{ width: '200px'}} />
-            </Modal.Body>
-            <a id='portfolio__modal__link' href={data.link} target='_blank' rel='noreferrer'>Go to site</a>
-            <Modal.Footer>
-                <div>Technologies used: </div>
-                <p style={{fontSize: '0.7rem', marginRight: 'auto'}}>{data.tech}</p>
-                <Button onClick={()=> setModalShow(false)}>Close</Button>
-            </Modal.Footer>
+                show={modalShow}
+                onHide={handleClose}
+                size='lg'
+                arial-labelledby="contained-modal-title-vcenter"
+                centered
+            >
+                <Modal.Header>
+                    <Modal.Title id="contained-modal-title-vcenter">
+                        {data.title}
+                    </Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <p>{data.summary}</p>
+                    <Image src={data.image} style={{ width: '200px' }} />
+                </Modal.Body>
+                <a id='portfolio__modal__link' href={data.link} target='_blank' rel='noreferrer'>Go to site</a>
+                <Modal.Footer>
+                    <div>Technologies used: </div>
+                    <p style={{ fontSize: '0.7rem', marginRight: 'auto' }}>{data.tech}</p>
+                    <Button onClick={() => setModalShow(false)}>Close</Button>
+                </Modal.Footer>
             </Modal>
         )
     }
@@ -61,7 +61,7 @@ function Portfolio() {
                     src={e.image}
                 />
                 <div className="portfolio__click__info">&#x1F50E;&#xFE0E;</div>
-            {createModal(tempData)}
+                {createModal(tempData)}
 
             </Card >
 

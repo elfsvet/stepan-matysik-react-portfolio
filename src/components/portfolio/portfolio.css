@@ -1,10 +1,6 @@
-Udemy
-Build a portfolio with React.JS
-portfolio.css
-CSS
-
 .portfolio {
   background-color: aqua;
+  /* z-index: 3; */
 }
  
 .portfolio__main__container h1, 

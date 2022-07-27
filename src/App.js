@@ -7,6 +7,7 @@ import AboutMe from './components/aboutMe/AboutMe';
 import Technologies from './components/technologies/Technologies';
 import Portfolio from './components/portfolio/Portfolio';
 import ContactMe from './components/contactMe/ContactMe';
+import ContactForm from './components/contactForm/ContactForm';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <AboutMe />
       <Technologies />
       <Portfolio />
+      <ContactForm/>
       <ContactMe />
     </div>
   );

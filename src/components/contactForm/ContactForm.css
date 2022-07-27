@@ -1,0 +1,16 @@
+
+#contact__form__container {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    
+}
+#contact__form__container h1 {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.error-text {
+    font-size: 3rem;
+    color: crimson;
+}
