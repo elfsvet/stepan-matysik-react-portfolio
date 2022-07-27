@@ -21,7 +21,7 @@ function Portfolio() {
             show={modalShow}
             onHide={handleClose}
             size='lg'
-            arial-lebelledby="continer-modal-title-vcenter"
+            arial-labelledby="contained-modal-title-vcenter"
             centered
           >
             <Modal.Header>
@@ -31,7 +31,14 @@ function Portfolio() {
             </Modal.Header>
             <Modal.Body>
             <p>{data.summary}</p>
+            <Image src={data.image} style={{ width: '200px'}} />
             </Modal.Body>
+            <a id='portfolio__modal__link' href={data.link} target='_blank' rel='noreferrer'>Go to site</a>
+            <Modal.Footer>
+                <div>Technologies used: </div>
+                <p style={{fontSize: '0.7rem', marginRight: 'auto'}}>{data.tech}</p>
+                <Button onClick={()=> setModalShow(false)}>Close</Button>
+            </Modal.Footer>
             </Modal>
         )
     }
@@ -53,29 +60,7 @@ function Portfolio() {
                     }}
                     src={e.image}
                 />
-                <div className="portfolio__click__info"></div>
-
-
-                {/* <Modal
-                show={modalShow}
-                onHide={handleClose}
-                backdrop="static"
-                keyboard={false}
-            >
-                <Modal.Header closeButton>
-                    <Modal.Title>{e.title}</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    {e.summary}
-                </Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                        Close
-                    </Button>
-                    <Button variant="primary">Understood</Button>
-                </Modal.Footer>
-            </Modal> */}
-
+                <div className="portfolio__click__info">&#x1F50E;&#xFE0E;</div>
             {createModal(tempData)}
 
             </Card >
@@ -88,7 +73,7 @@ function Portfolio() {
         <div className='portfolio__main__container' id='portfolio'>
             <h1>Portfolio</h1>
             <p>This is my GitHub page:
-                <a href='https://github.com/elfsvet' target='_blank' rel='noopener'> https://github.com/elfsvet</a>
+                <a href='https://github.com/elfsvet' target='_blank' rel='noreferrer'> https://github.com/elfsvet</a>
             </p>
             <Container fluid="lg" style={{ padding: '2rem 0' }}>
                 <Row>
@@ -97,7 +82,7 @@ function Portfolio() {
             </Container>
 
         </div>
-    )
+    );
 }
 
 export default Portfolio

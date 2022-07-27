@@ -6,6 +6,7 @@ import Header from './components/header/Header'
 import AboutMe from './components/aboutMe/AboutMe';
 import Technologies from './components/technologies/Technologies';
 import Portfolio from './components/portfolio/Portfolio';
+import ContactMe from './components/contactMe/ContactMe';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <AboutMe />
       <Technologies />
       <Portfolio />
+      <ContactMe />
     </div>
   );
 }
