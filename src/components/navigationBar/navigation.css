@@ -2,8 +2,10 @@
     background-color: var(--nav-color);
     color           : white;
     position        : 'fixed';
-    top             : '0';
-    width           : '100%';
+
+
+    top  : '0';
+    width: '100%';
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -21,3 +23,10 @@
 .links a:hover {
     background-color: var(--font-color-hover);
 }
+
+/* #home {
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+}
+*/
