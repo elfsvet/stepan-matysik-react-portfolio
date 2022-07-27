@@ -1,18 +1,41 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Navigation.css'
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { navigationLinks } from '../../helpers/navigationLinks'
 const createLinks = () => {
-    return navigationLinks.map((e, idx) => (
-        <Nav.Link key={idx} href={e.ref}>{e.name}</Nav.Link>
+    return navigationLinks.map((e, index) => (
+        <Nav.Item >
+
+            <Nav.Link
+                key={index}
+                href={e.ref}
+            >
+                {e.name}
+            </Nav.Link>
+        </Nav.Item>
     ))
 }
 
-const NavigationBar = () => {
+const NavigationBar = (props) => {
+    const {
+        categories = [],
+        setCurrentCategory,
+        contactSelected,
+        currentCategory,
+        setContactSelected,
+    } = props;
+
+    // useEffect(() => {
+    //     console.log(currentCategory.name)
+    //     document.title = currentCategory.name
+    // }, [currentCategory]);
+
+    // console.log(`currentCategory: ${currentCategory.name}`)
+
     return (
         <div id='home'>
-            <Navbar className='navigation-container' collapseOnSelect expand="md" style={{ zIndex: 2}}>
+            <Navbar className='navigation-container' collapseOnSelect expand="md" style={{ zIndex: 2 }}>
                 <Navbar.Brand href="#home" style={{ marginLeft: '1rem' }}>
                     Stepan Matysik
                 </Navbar.Brand>

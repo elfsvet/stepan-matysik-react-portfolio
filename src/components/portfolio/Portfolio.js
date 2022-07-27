@@ -7,7 +7,7 @@ import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
-
+import {gitHub} from '../../helpers/icons'
 
 
 function Portfolio() {
@@ -36,7 +36,7 @@ function Portfolio() {
                     <Image src={data.image} style={{ width: '200px' }} />
                 </Modal.Body>
                 <a id='portfolio__modal__link' href={data.link} target='_blank' rel='noreferrer'>Go to site</a>
-                <a id='portfolio__modal__link' href={data.github_link} target='_blank' rel='noreferrer' icon="react">Go to GitHub
+                <a id='portfolio__modal__link' href={data.github_link} target='_blank' rel='noreferrer'>{gitHub}
                 </a>
                 <Modal.Footer>
                     <div>Technologies used: </div>

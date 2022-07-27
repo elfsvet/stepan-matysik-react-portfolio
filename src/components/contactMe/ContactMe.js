@@ -4,8 +4,8 @@ import { navigationLinks } from '../../helpers/navigationLinks'
 import { gitHub, linkedIn, email } from '../../helpers/icons';
 
 const createLinks = () => {
-    return navigationLinks.map((e, idx) => (
-        <p key={idx}><a href={e.ref}>{e.name}</a></p>
+    return navigationLinks.map((e, index) => (
+        <p key={index}><a href={e.ref}>{e.name}</a></p>
     ))
 }
 
@@ -25,12 +25,12 @@ function ContactMe() {
                         </li>
                         <li>
 
-                    <a href='https://github.com/elfsvet'>{gitHub}</a>
+                    <a href='https://github.com/elfsvet' target='_blank' rel='noreferrer'>{gitHub}</a>
 
                         </li>
                         <li>
 
-                        <a href='https://www.linkedin.com/in/stepanmatysik/'>{linkedIn}</a>
+                        <a href='https://www.linkedin.com/in/stepanmatysik/' target='_blank' rel='noreferrer'>{linkedIn}</a>
 
                         </li>
                     </ul>
