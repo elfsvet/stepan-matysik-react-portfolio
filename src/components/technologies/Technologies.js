@@ -1,7 +1,11 @@
 import React from 'react';
 import './Technologies.css';
-import DevIcon from 'devicon-react-svg';
+// import techs from '../../helpers/techs'
+// import DevIcon from 'devicon-react-svg';
+
+// import technologi
 import { techs } from '../../helpers/techs';
+const technologies = techs.map(tech => ({ icon: tech.reactIcon }))
 
 function Technologies() {
     return (
@@ -17,7 +21,7 @@ function Technologies() {
                     return (
                         <div key={index} className="tech__card">
 
-                            <DevIcon className="tech__icons" icon={elem.iconName} />
+                            {/* <DevIcon className="tech__icons" icon={elem.iconName} /> */}
                             <span style={{ margin: '5px', fontSize: '1.5rem' }}>{elem.name}</span>
                         </div>
                     )

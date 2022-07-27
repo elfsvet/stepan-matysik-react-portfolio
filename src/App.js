@@ -1,6 +1,6 @@
 
 import './App.css';
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import Navigation from './components/navigationBar/NavigationBar'
 import Particles from "./components/Particles";
 import Header from './components/header/Header'
@@ -12,35 +12,34 @@ import ContactForm from './components/contactForm/ContactForm';
 import { navigationLinks } from './helpers/navigationLinks';
 
 function App() {
-  const [categories] = useState(
-    navigationLinks
-  );
+
+  const categories = navigationLinks.map((e) => ({ name: e.name }))
 
 
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  // console.log(categories)
+  // const categories = [{ name: 'HOME' }]
+  const [currentCategory, setCurrentCategory] = useState("HOME");
 
 
-  console.log(currentCategory)
-
-  const renderCategory = () => {
-    if (currentCategory.name === 'HOME') {
+  const renderCategory = useCallback( () => {
+    if (currentCategory === 'HOME') {
 
       return <>
         <Header />
         <Particles id='tsparticles' />
       </>
     }
-    if (currentCategory.name === 'ABOUT') {
+    if (currentCategory === 'ABOUT') {
       return <AboutMe />;
     }
-    if (currentCategory.name === 'TECHNOLOGIES') {
+    if (currentCategory === 'TECHNOLOGIES') {
       return <Technologies />;
     }
-    if (currentCategory.name === 'PORTFOLIO') {
+    if (currentCategory === 'PORTFOLIO') {
       return <Portfolio />;
     }
     return <ContactForm />;
-  };
+  },[currentCategory]);
 
 
   // handler takes a Category parameter and changes the current Category to this Category
