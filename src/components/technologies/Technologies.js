@@ -21,7 +21,7 @@ function Technologies() {
 
                 {techs.map((elem, index) => {
 
-                    console.log(elem.reactIcon)
+                    // console.log(elem.reactIcon)
                     return (
                         <div key={index} className="tech__card">
                             < IconContext.Provider value={{ size: "4rem",className: "tech__icons" }}>

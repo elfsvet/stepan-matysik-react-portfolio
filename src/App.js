@@ -21,7 +21,7 @@ function App() {
   const [currentCategory, setCurrentCategory] = useState("HOME");
 
 
-  const renderCategory = useCallback( () => {
+  const renderCategory = () => {
     if (currentCategory === 'HOME') {
 
       return <>
@@ -39,7 +39,7 @@ function App() {
       return <Portfolio />;
     }
     return <ContactForm />;
-  },[currentCategory]);
+  };
 
 
   // handler takes a Category parameter and changes the current Category to this Category
@@ -53,7 +53,8 @@ function App() {
         handleCategoryChange={handleCategoryChange}
       />
       {renderCategory()}
-      <ContactMe    currentCategory={currentCategory}
+      <ContactMe
+        currentCategory={currentCategory}
         handleCategoryChange={handleCategoryChange} />
     </div>
   );
