@@ -7,7 +7,7 @@ import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
-import {gitHub} from '../../helpers/icons'
+import { gitHub } from '../../helpers/icons'
 
 
 function Portfolio() {
@@ -76,8 +76,10 @@ function Portfolio() {
 
 
     return (
-        <div className='portfolio__main__container' id='portfolio'>
-            <h1>Portfolio</h1>
+        <div className='portfolio__main__container'>
+            <div>
+                <h1>Portfolio</h1>
+            </div>
             <p>This is my GitHub page:
                 <a href='https://github.com/elfsvet' target='_blank' rel='noreferrer'> https://github.com/elfsvet</a>
             </p>

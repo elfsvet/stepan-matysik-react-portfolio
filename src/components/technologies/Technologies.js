@@ -1,16 +1,14 @@
 import React from 'react';
 import './Technologies.css';
-// import techs from '../../helpers/techs'
-// import DevIcon from 'devicon-react-svg';
-
-// import technologi
 import { techs } from '../../helpers/techs';
+import {} from '../../helpers/icons';
+
 const technologies = techs.map(tech => ({ icon: tech.reactIcon }))
 
 function Technologies() {
     return (
 
-        <div className='technologies__container' id="technologies">
+        <div className='technologies__container' >
             <div>
                 <h1 style={{ textAlign: 'center' }}>Some of the technologies I use:</h1>
 

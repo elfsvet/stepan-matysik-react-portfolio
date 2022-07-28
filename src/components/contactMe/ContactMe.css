@@ -1,17 +1,24 @@
 .contactMe__container {
     background-color: var(--nav-color);
-    color: aliceblue;
-    padding: 1rem;
+    color           : aliceblue;
+    padding         : 1rem;
+    position:relative;
+    /* right: 0; */
+    left: 0;
+    bottom  : 0;
+    
+    /* width   : 100%; */
+
 }
 
 .contactMe__data__links {
-    display: flex;
+    display        : flex;
     justify-content: space-evenly;
 }
 
 .contactMe__data__links a {
-    color: white;
-    text-decoration: none;
+    color            : white;
+    text-decoration  : none;
     /* text-transform: uppercase; */
 }
 

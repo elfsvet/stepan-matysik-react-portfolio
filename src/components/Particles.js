@@ -20,21 +20,30 @@ const ParticlesComponent = (props) => {
       },
       interactivity: {
         events: {
-          // onClick: {
-          //   enable: true, // enables the click event
-          //   mode: "push", // adds the particles on click
-          // },
-          onHover: {
-            enable: true, // enables the hover event
-            mode: "repulse", // make the particles run away from the cursor
+          onClick: {
+            enable: true, // enables the click event
+            mode: "push", // adds the particles on click
           },
+          // onHover: {
+          //   enable: true, // enables the hover event
+          //   mode: "repulse", // make the particles run away from the cursor
+          // },
+          resize: true,
         },
         modes: {
+          bubble: {
+            distance: 200,
+            duration: 2,
+            opacity: 0.8,
+            size: 40,
+          },
           push: {
-            quantity: 10, // number of particles to add on click
+            quantity: 4, // number of particles to add on click
           },
           repulse: {
-            distance: 100, // distance of the particles from the cursor
+            distance: 200, // distance of the particles from the cursor
+            duration: 0.4,
+
           },
         },
       },
@@ -43,11 +52,16 @@ const ParticlesComponent = (props) => {
           value: '#ffffff'
         },
         links: {
-          color: '#abdbe3',
+          color: '#D6EBFF',
           enable: true, // enabling this will make particles linked together
-          distance: 200, // maximum distance for linking the particles
+          distance: 150, // maximum distance for linking the particles
         },
         move: {
+          direction: "none",
+          outMode: "bounce",
+          random: false,
+          straight: false,
+
           enable: true, // enabling this will make particles move in the canvas
           speed: { min: 1, max: 5 }, // using a range in speed value will make particles move in a random speed between min/max values, each particles have its own value, it won't change in time by default
         },

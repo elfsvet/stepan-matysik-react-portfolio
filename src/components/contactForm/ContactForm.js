@@ -42,67 +42,70 @@ const ContactForm = () => {
 
 
     return (
-        <Container id="contact__form__container" >
-            <h1 data-testid='h1tag'>Contact me</h1>
+        <div className='contact__main__container'>
 
-            <Form onSubmit={handleSubmit} id="contact__form">
-                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Container id="contact__form__container" >
+                <h1>Contact me</h1>
 
-                    {/* name input */}
+                <Form onSubmit={handleSubmit} id="contact__form">
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
 
-                    <Form.Label>Name:</Form.Label>
-                    <Form.Control
-                        type="name"
-                        name='name'
-                        placeholder="Full name"
-                        defaultValue={name} onBlur={handleChange}
-                    />
-                </Form.Group>
+                        {/* name input */}
 
-                {/* email input */}
+                        <Form.Label>Name:</Form.Label>
+                        <Form.Control
+                            type="name"
+                            name='name'
+                            placeholder="Full name"
+                            defaultValue={name} onBlur={handleChange}
+                        />
+                    </Form.Group>
 
-                <Form.Group
-                    className="mb-3"
-                    controlId="exampleForm.ControlInput1"
-                >
-                    <Form.Label>Email address:</Form.Label>
-                    <Form.Control
-                        type="email"
-                        name='email'
-                        placeholder="name@example.com"
-                        defaultValue={email} onBlur={handleChange}
-                    />
-                </Form.Group>
+                    {/* email input */}
 
-                {/* message text area */}
+                    <Form.Group
+                        className="mb-3"
+                        controlId="exampleForm.ControlInput1"
+                    >
+                        <Form.Label>Email address:</Form.Label>
+                        <Form.Control
+                            type="email"
+                            name='email'
+                            placeholder="name@example.com"
+                            defaultValue={email} onBlur={handleChange}
+                        />
+                    </Form.Group>
 
-                <Form.Group
-                    className="mb-3"
-                    controlId="exampleForm.ControlTextarea1"
-                >
-                    <Form.Label>Message:</Form.Label>
-                    <Form.Control
-                        as="textarea"
-                        name="message"
-                        rows={5}
-                        defaultValue={message} onBlur={handleChange}
-                    />
-                </Form.Group>
-            </Form>
+                    {/* message text area */}
 
-            {/* this is refers as if(errorMessage){add div and p tags with info} */}
-            {errorMessage && (
-                <div>
-                    <p className="error-text">{errorMessage}</p>
-                </div>
-            )}
+                    <Form.Group
+                        className="mb-3"
+                        controlId="exampleForm.ControlTextarea1"
+                    >
+                        <Form.Label>Message:</Form.Label>
+                        <Form.Control
+                            as="textarea"
+                            name="message"
+                            rows={5}
+                            defaultValue={message} onBlur={handleChange}
+                        />
+                    </Form.Group>
+                </Form>
 
-            <Button
-                variant="primary"
-                type="submit"
-                data-testid='button'>Submit</Button>
+                {/* this is refers as if(errorMessage){add div and p tags with info} */}
+                {errorMessage && (
+                    <div>
+                        <p className="error-text">{errorMessage}</p>
+                    </div>
+                )}
 
-        </Container>
+                <Button
+                    variant="primary"
+                    type="submit"
+                    data-testid='button'>Submit</Button>
+
+            </Container>
+        </div>
     )
 }
 
