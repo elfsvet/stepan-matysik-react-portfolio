@@ -53,7 +53,8 @@ function App() {
         handleCategoryChange={handleCategoryChange}
       />
       {renderCategory()}
-      <ContactMe />
+      <ContactMe    currentCategory={currentCategory}
+        handleCategoryChange={handleCategoryChange} />
     </div>
   );
 }

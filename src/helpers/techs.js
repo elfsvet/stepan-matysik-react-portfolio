@@ -1,101 +1,103 @@
+import { DiReact, DiJavascript1, DiCss3, DiJqueryLogo, DiNodejs, DiMysql, DiGulp, DiPostgresql, DiAws, DiFirebase, DiSass, DiBootstrap, DiVisualstudio, DiMongodb, DiNpm, DiPhotoshop, DiIllustrator } from "react-icons/di";
+
 export const techs = [
     {
         name: 'React',
-        reactIcon: 'DiReact',
+        reactIcon: DiReact,
         iconName: 'react'
     },
     {
         name: 'JavaScript',
-        reactIcon: 'DiJavascript1',
+        reactIcon: DiJavascript1,
 
         iconName: 'javascript'
     },
     {
         name: 'CSS',
-        reactIcon: 'DiCss3',
+        reactIcon: DiCss3,
         iconName: 'css3'
     },
     {
         name: 'jQuery',
-        reactIcon: 'DiJqueryLogo',
+        reactIcon: DiJqueryLogo,
         iconName: 'jquery'
         
     },
     {
         name: 'NodeJS',
-        reactIcon: 'DiNodejs',
+        reactIcon: DiNodejs,
         iconName: 'nodejs'
         
     },
     {
         name: 'MySQL',
-        reactIcon: 'DiMysql',
+        reactIcon: DiMysql,
         iconName: 'mysql'
         
     },
     {
         name: 'Gulp',
-        reactIcon: 'DiGulp',
+        reactIcon: DiGulp,
         iconName: 'gulp'
         
     },
     {
         name: 'Postgresql',
-        reactIcon: 'DiPostgresql',
+        reactIcon: DiPostgresql,
         iconName: 'postgresql'
         
     },
     {
         name: 'AWS',
-        reactIcon: 'DiAws',
+        reactIcon: DiAws,
         iconName: 'aws'
         
     },
     {
         name: 'Firebase',
-        reactIcon: 'DiFirebase',
+        reactIcon: DiFirebase,
         iconName: 'firebase'
         
     },
     {
         name: 'SASS',
-        reactIcon: 'DiSass',
+        reactIcon: DiSass,
         iconName: 'sass'
         
     },
     {
         name: 'Bootstrap',
-        reactIcon: 'DiBootstrap',
+        reactIcon: DiBootstrap,
         iconName: 'bootstrap'
         
     },
     {
         name: 'Visual Studio',
-        reactIcon: 'DiVisualstudio',
+        reactIcon: DiVisualstudio,
         iconName: 'visualstudio'
         
     },
     {
         name: 'MongoDB',
-        reactIcon: 'DiMongodb',
+        reactIcon: DiMongodb,
         iconName: 'mongodb'
         
     },
     {
         name: 'npm',
-        reactIcon: 'DiNpm',
+        reactIcon: DiNpm,
         iconName: 'npm'
         
     },
     {
         name: 'Photoshop',
-        reactIcon: 'DiPhotoshop',
+        reactIcon: DiPhotoshop,
         iconName: 'photoshop'
         
     },
     {
         name: 'Illustrator',
-        reactIcon: 'DiIllustrator',
+        reactIcon: DiIllustrator,
         iconName: 'illustrator'
         
     }
