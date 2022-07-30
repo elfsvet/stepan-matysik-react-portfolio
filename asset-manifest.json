@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/stepan-matysik-react-portfolio/static/css/main.1eb4ed7a.css",
-    "main.js": "/stepan-matysik-react-portfolio/static/js/main.7aaf4317.js",
+    "main.js": "/stepan-matysik-react-portfolio/static/js/main.0bcba79f.js",
     "static/js/787.41534712.chunk.js": "/stepan-matysik-react-portfolio/static/js/787.41534712.chunk.js",
     "static/media/bar-hop.gif": "/stepan-matysik-react-portfolio/static/media/bar-hop.a511f34161ab3985abc6.gif",
     "static/media/lingua.gif": "/stepan-matysik-react-portfolio/static/media/lingua.83c2a0ea47345a27435b.gif",
@@ -13,11 +13,11 @@
     "static/media/subtle-prism.svg": "/stepan-matysik-react-portfolio/static/media/subtle-prism.aa429c5f8d2afd987d0b.svg",
     "index.html": "/stepan-matysik-react-portfolio/index.html",
     "main.1eb4ed7a.css.map": "/stepan-matysik-react-portfolio/static/css/main.1eb4ed7a.css.map",
-    "main.7aaf4317.js.map": "/stepan-matysik-react-portfolio/static/js/main.7aaf4317.js.map",
+    "main.0bcba79f.js.map": "/stepan-matysik-react-portfolio/static/js/main.0bcba79f.js.map",
     "787.41534712.chunk.js.map": "/stepan-matysik-react-portfolio/static/js/787.41534712.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1eb4ed7a.css",
-    "static/js/main.7aaf4317.js"
+    "static/js/main.0bcba79f.js"
   ]
 }
