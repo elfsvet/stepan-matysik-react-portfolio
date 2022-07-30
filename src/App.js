@@ -1,6 +1,6 @@
 
 import './App.css';
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useState, useEffect } from 'react';
 import Navigation from './components/navigationBar/NavigationBar'
 import Particles from "./components/Particles";
 import Header from './components/header/Header'
@@ -21,6 +21,7 @@ function App() {
   const [currentCategory, setCurrentCategory] = useState("HOME");
 
 
+  
   const renderCategory = () => {
     if (currentCategory === 'HOME') {
       
@@ -40,7 +41,12 @@ function App() {
     }
     return <ContactForm />;
   };
-
+      // useEffect(() => {
+    //     console.log(currentCategory)
+    //     document.title = currentCategory
+    // }, [currentCategory]);
+    //  useEffect(() =>{
+    //  },[currentCategory])
 
   // handler takes a Category parameter and changes the current Category to this Category
 
