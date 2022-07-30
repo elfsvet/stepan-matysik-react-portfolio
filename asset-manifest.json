@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/stepan-matysik-react-portfolio/static/css/main.1eb4ed7a.css",
+    "main.js": "/stepan-matysik-react-portfolio/static/js/main.0bcba79f.js",
+    "static/js/787.41534712.chunk.js": "/stepan-matysik-react-portfolio/static/js/787.41534712.chunk.js",
+    "static/media/bar-hop.gif": "/stepan-matysik-react-portfolio/static/media/bar-hop.a511f34161ab3985abc6.gif",
+    "static/media/lingua.gif": "/stepan-matysik-react-portfolio/static/media/lingua.83c2a0ea47345a27435b.gif",
+    "static/media/tech_blog.gif": "/stepan-matysik-react-portfolio/static/media/tech_blog.fcc2e5e9444240683d56.gif",
+    "static/media/weather_dashboard.gif": "/stepan-matysik-react-portfolio/static/media/weather_dashboard.a81df84f4ef63af3d8a4.gif",
+    "static/media/note_taker.gif": "/stepan-matysik-react-portfolio/static/media/note_taker.dba917cce64cd0a01666.gif",
+    "static/media/budget_tracker.gif": "/stepan-matysik-react-portfolio/static/media/budget_tracker.6a631babaee8960a010c.gif",
+    "static/media/stepan.jpg": "/stepan-matysik-react-portfolio/static/media/stepan.0dd88e4a263be4f4abe8.jpg",
+    "static/media/subtle-prism.svg": "/stepan-matysik-react-portfolio/static/media/subtle-prism.aa429c5f8d2afd987d0b.svg",
+    "index.html": "/stepan-matysik-react-portfolio/index.html",
+    "main.1eb4ed7a.css.map": "/stepan-matysik-react-portfolio/static/css/main.1eb4ed7a.css.map",
+    "main.0bcba79f.js.map": "/stepan-matysik-react-portfolio/static/js/main.0bcba79f.js.map",
+    "787.41534712.chunk.js.map": "/stepan-matysik-react-portfolio/static/js/787.41534712.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1eb4ed7a.css",
+    "static/js/main.0bcba79f.js"
+  ]
+}
