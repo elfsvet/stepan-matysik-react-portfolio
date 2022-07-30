@@ -23,7 +23,7 @@ function App() {
 
   const renderCategory = () => {
     if (currentCategory === 'HOME') {
-
+      
       return <>
         <Header />
         <Particles id='tsparticles' />

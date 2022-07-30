@@ -4,24 +4,25 @@ import { navigationLinks } from '../../helpers/navigationLinks'
 import { gitHub, linkedIn, email } from '../../helpers/icons';
 import Nav from 'react-bootstrap/Nav';
 
-const createLinks = (handle) => {
-    return navigationLinks.map((e, index) => (
-        <Nav.Item>
-
-            <Nav.Link
-                key={index}
-                onClick={() => handle(e.name)}
-                href={e.ref}
-            >
-                {e.name}
-            </Nav.Link>
-        </Nav.Item>
-
-    ))
-}
 
 
-function ContactMe(currentCategory, handleCategoryChange) {
+function ContactMe({currentCategory, handleCategoryChange}) {
+    const createLinks = (handle) => {
+        return navigationLinks.map((e, index) => (
+            <Nav.Item>
+    
+                <Nav.Link
+                    key={index}
+                    onClick={() => handle(e.name)}
+                    href={e.ref}
+                    // className={currentCategory===e.name ? "active" : 'non-active'}
+                >
+                    {e.name}
+                </Nav.Link>
+            </Nav.Item>
+    
+        ))
+    }
     return (
         <div className="contactMe__container" id="contact">
             <div className='contactMe__data__links'>
@@ -47,7 +48,7 @@ function ContactMe(currentCategory, handleCategoryChange) {
                     </ul>
                 </div>
                 <div>
-                    {createLinks()}
+                    {createLinks(handleCategoryChange)}
                     {/* <ul>
                         <li onClick={() => handleCategoryChange('HOME')}
                             href={"#home"}>

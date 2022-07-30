@@ -2,14 +2,12 @@
     background-color: var(--nav-color);
     color           : white;
     position        : 'fixed';
-    
-
     top  : '0';
     width: '100%';
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: var(--font-color) !important;
+.navbar-light .navbar-nav {
+    color: var(--font-color)!important;
 }
 
 .navbar-light .navbar-brand {
@@ -24,6 +22,12 @@
     background-color: var(--font-color-hover);
 }
 
+.non-active  {
+    color: var(--font-color) !important;
+}
+.active {
+    color: red !important;
+}
 /* #home {
     position: -webkit-sticky; 
     position: sticky;

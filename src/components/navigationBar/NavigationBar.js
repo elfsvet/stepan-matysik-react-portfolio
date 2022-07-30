@@ -3,31 +3,35 @@ import './Navigation.css'
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { navigationLinks } from '../../helpers/navigationLinks'
-const createLinks = (handle) => {
-    return navigationLinks.map((e, index) => (
-        <Nav.Item>
-
-            <Nav.Link
-                key={index}
-                onClick={() => handle(e.name)}
-                href={e.ref}
-            >
-                {e.name}
-            </Nav.Link>
-        </Nav.Item>
-
-    ))
-}
 
 const NavigationBar = ({ currentCategory, handleCategoryChange }) => {
-
-
+    
+    const createLinks = (handle) => {
+        return navigationLinks.map((e, index) => (
+            <Nav.Item >
+    
+                {/* {console.log(e.name)}
+                {console.log(currentCategory)} */}
+                <Nav.Link
+                    key={index}
+                    onClick={() => handle(e.name)}
+                    href={e.ref}
+                    className={currentCategory===e.name ? "active" : 'non-active'}
+                    >
+                {e.name}
+            </Nav.Link>
+            </Nav.Item >
+    
+        ))
+    }
+    
     // useEffect(() => {
     //     console.log(currentCategory)
     //     document.title = currentCategory
     // }, [currentCategory]);
 
     // console.log(`currentCategory: ${currentCategory}`)
+
 
     return (
         <div id='home'>
